@@ -45,6 +45,7 @@ import com.example.musicappui.Screen
 import com.example.musicappui.screenInBottom
 import com.example.musicappui.screensInDrawer
 import com.example.musicappui.ui.theme.AccountView
+import com.example.musicappui.ui.theme.BrowseScreen
 import com.example.musicappui.ui.theme.Home
 import com.example.musicappui.ui.theme.SubscriptionView
 import kotlinx.coroutines.CoroutineScope
@@ -169,7 +170,7 @@ fun Navigation(navController: NavController, viewModel: MainViewModel, pd: Paddi
             Home()
         }
         composable(Screen.BottomScreen.Browse.bRoute){
-
+            BrowseScreen()
         }
         composable(Screen.BottomScreen.Library.bRoute){
 
