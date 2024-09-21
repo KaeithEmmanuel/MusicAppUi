@@ -17,6 +17,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.example.musicappui.R
 
@@ -28,7 +29,8 @@ fun Home() {
     LazyColumn {
         grouped.forEach {
             stickyHeader {
-                Text(text = it.value[0], modifier = Modifier.padding(16.dp))
+                Text(text = it.value[0], modifier = Modifier.padding(16.dp),color = Color.Black,
+                    fontWeight = FontWeight.Bold)
                 LazyRow {
                     items(categories) { cat ->
                         BrowserItem(cat, drawable = R.drawable.baseline_explore_24)
@@ -51,7 +53,8 @@ fun BrowserItem(cat: String, drawable: Int) {
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            Text(text = cat)
+            Text(text = cat,color = Color.Black,
+                fontWeight = FontWeight.Bold)
             Image(painter = painterResource(id = drawable), contentDescription = cat)
         }
     }
