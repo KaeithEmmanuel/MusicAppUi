@@ -28,5 +28,7 @@ This is a simple music app UI built using Kotlin. The app showcases a modern and
 2. **Demo Vedio of the App:**
 
    ```bash
-https://github.com/user-attachments/assets/faefb330-d900-4f90-b85e-0b9803c729d5
+   https://github.com/user-attachments/assets/a7ef8aef-4a24-4faf-90b3-54e9001ab9de
+
+
 
